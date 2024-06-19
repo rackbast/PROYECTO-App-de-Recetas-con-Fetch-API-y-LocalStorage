@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container_header">
+        <h1 class="title"><label for="">Buscador de Recetas</label></h1>
+        <div class="containerButtons">
+            <button class="buttonn first">Inicio</button>
+        <button class="buttonn second"><a href="./favorites.html">Favoritos</a></button></div>
+
+        <div class="recetasAgregadas">
+            <div class="cabecera">
+                <p>App recetas</p>
+                <span class="closet">X</span>
+            </div>
+            <p class="recetasAgregadas__contenido">Agregado correctamente</p>
+        </div>
+    </header>
+    <h2><label for="">Inicio</label></h2>
+    <main>
+    
+        <div class="container__search">
+            <label for="select_category">Categoria</label>
+            <select name="category" id="select_category">
+              <option value="">--Seleccione--</option>
+            
+            </select>
+        </div>
+
+    <section class="container__food">
+      
+    </section>
+    <section class="modal">
+        <div class="container_modal">
+            <!-- <span class="close">x</span> -->
+            <h1 class="container__modal__title">Título del Modal</h1>
+            <div class="containerScrool">
+                <img src="imagen.jpg" alt="Imagen Modal" class="container__modal__img">
+                <h2 class="container__modal__subtitle">Instruciones</h2>
+                <p class="container__modal__description">Descripción del Modal.</p>
+                <h3>Instrucciones y cantidades</h3>
+            </div>
+            
+            <div class="container__modal__buttons">
+                <button class="save">Guardar Favorito</button>
+                <button class="close">X</button>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>

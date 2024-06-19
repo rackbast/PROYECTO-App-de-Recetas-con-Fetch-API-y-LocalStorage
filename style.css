@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container_header {
+  
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: rgba(202, 105, 105, 0.693);
+}
+.recetasAgregadas{
+    opacity: 0;
+    display: none;
+    position: fixed;
+    width: 200px;
+    border: 1px solid #363131;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2); ;
+    right: 30px;
+    border-radius: 5px;
+    z-index: 999;
+    font-size: 1.5rem;
+    transition: opacity 0.8s ease-in-out;
+    color:black;
+    overflow: hidden;
+}
+.recetasAgregadas.show{
+    opacity: 1;
+    display: block;
+    transition: display 0.5s ease-in-out;
+}
+.recetasAgregadas .cabecera {
+    background-color:  #3498DB ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+}
+.cabecera .closet {
+ 
+    cursor: pointer;
+    font-size: 20px;
+    color: #E74C3C; /* Color de la X */
+}
+.recetasAgregadas .recetasAgregadas__contenido{
+    padding: 15px 5px;
+    background-color: #ECF0F1 ;
+
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.buttonn {
+    width: 100px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative
+}
+
+
+.buttonn:active {
+    transform: scale(0.96);
+}
+
+h2 {
+    margin: 25px 0; 
+    text-align: center;
+    font-size: 2.9rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__search {
+    border: 1px solid rgba(47, 43, 43, 0.452);
+    padding: 3% 20%; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__search label {
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+#select_category {
+    width: 30vw;
+    max-width: 500px;
+    border: 1px solid rgba(47, 43, 43, 0.151);
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+#select_category:focus {
+    outline: 0;
+}
+
+.container__food {
+    margin: 25px ;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+   
+}
+
+.container__food div {
+    border: 1px solid rebeccapurple;
+    width: auto; /* Ajustar el ancho automáticamente */
+    padding: 8px; /* Añadir padding para el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container__food div p{
+    padding: 10px;
+    font-size: 2.0rem;
+}
+.container__food div button{
+    padding: 8px 20%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(236, 192, 192);
+    cursor: pointer;
+}
+.container__food div button:active{
+
+    transform: scale(0.96);
+}
+.modal{
+    display: none; 
+    top: 0;
+    left: 0;
+    position: fixed; 
+   width: 100%;
+   height: 100%;
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 100;  
+}
+.modal.show{
+    display: block;
+
+}
+
+.container_modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; 
+}
+.container_modal h1 {
+margin-bottom: 10px;
+}
+.container_modal .close {
+    position: absolute; /* Posicionamos el botón de cierre de forma absoluta */
+    top: 10px; /* Ajustamos la posición superior */
+    right: 10px; /* Ajustamos la posición derecha */
+    cursor: pointer;
+    background-color: rgb(237, 13, 13);
+    color: white;
+   
+}
+.container_modal .save{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.container_modal .save.show{
+    background-color: red;
+}
+.containerScrool {
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.container_modal p{
+    font-size: 1.8rem;
+}
+
+.container_modal img{
+    width: 100%;
+}
+.container_modal .instruction{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.container__modal__buttons{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container__modal__buttons button{
+padding: 7px;    
+border-radius: 5px;
+border: none;
+}
+
+.container__modal__buttons button:active:active{
+    transform: scale(0.96);
+}
+
